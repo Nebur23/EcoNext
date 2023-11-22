@@ -4,7 +4,7 @@ import React from 'react'
 const list = () => {
   return (
     <View>
-      <Text>list</Text>
+      <Text>Welcome to the eco community</Text>
     </View>
   )
 }

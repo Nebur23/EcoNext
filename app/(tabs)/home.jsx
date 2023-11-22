@@ -8,7 +8,7 @@ import Welcome from '../../components/welcome'
 import Categories from '../../components/categories'
 import{ initiatives} from "../../data/initiative.json"
 
-import img from "../../assets/images/plastic-free.jpeg"
+import img from "../../assets/images/p1.jpeg"
 import Card from '../../components/common/card/card'
 
 const Home = () => {
@@ -45,22 +45,23 @@ const Home = () => {
              <Categories />
             
           
-          <Text>hello</Text>
-          <FlatList
+          
+            <Card
+              title={title}
+              imageSource={ img }
+              onPress={handleCardPress}
+            /> 
+          {/* <FlatList
         data={filteredData}
         keyExtractor={(item) => item.title}
         renderItem={({ item }) => (
           <View style={styles.item}>
               
-              {/* <Card
-              title={item.title}
-              imageSource={ img }
-              onPress={handleCardPress}
-            /> */}
+             
             <Text>{item.title} </Text>
           </View>
         ) }
-      />
+      /> */}
           </View>
        </ScrollView>
     </SafeAreaView>
